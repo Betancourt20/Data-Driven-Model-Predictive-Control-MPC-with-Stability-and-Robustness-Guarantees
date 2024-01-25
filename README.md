@@ -6,6 +6,11 @@ This repository is an implementation of the robust data-driven model predictive 
 ## Abstract
 The authors propose a robust data-driven MPC scheme for controlling linear time-invariant systems. The scheme relies on an implicit model description based on past measured trajectories. In the absence of measurement noise, the paper establishes the exponential stability of a nominal data-driven MPC scheme with terminal equality constraints. Furthermore, for bounded additive output measurement noise, the authors propose a robust modification including a slack variable with regularization in the cost. The robust MPC scheme leads to practical exponential stability of the closed-loop with respect to the noise level, marking the first theoretical analysis of the closed-loop properties of such a purely data-driven MPC scheme.
 
+## Before Implementation
+```
+    pip3 install control cvxpy
+```
+
 ## Implementation Files
 This repository contains the following Python scripts which simulate the control scheme as described in the paper:
 - `Compute_init_cond.py`: Script to compute initial conditions for MPC simulations.
